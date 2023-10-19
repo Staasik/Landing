@@ -1,0 +1,121 @@
+.modal {
+  position: fixed;
+  top: 250px;
+  width: 50%;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  background-color: #fff
+}
+.modal__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  width: 90%
+}
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%
+}
+.modal__head {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+.modal__description-text {
+  font-size: 14px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif
+}
+.modal__description-text-bold {
+  font-size: 24px;
+  color: #212529;
+  font-family: TacticSans-BLD,sans-serif
+}
+.modal__description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px
+}
+.modal__mini-text {
+  font-size: 11px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  text-align: center
+}
+.modal__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 35px
+}
+.modal__svg {
+  display: flex;
+  flex-direction: row;
+  gap: 15px
+}
+.modal__description-item {
+  font-size: 14px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif
+}
+.modal__buttons-item-red {
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif;
+  background-color: #ca0012;
+  width: 100%
+}
+.modal__input {
+  font-size: 14px;
+  color: #adb5bd;
+  font-family: TacticSans-REG,sans-serif;
+  background-color: #fff;
+  padding: 16px;
+  width: 100%;
+  border: 2px solid #dee2e6
+}
+.modal__points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 35px
+}
+.modal__points-text {
+  font-size: 16px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif
+}
+@media (max-width:1000px) {
+  .modal {
+    top: 150px;
+    width: 90%
+  }
+}

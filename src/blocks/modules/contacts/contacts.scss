@@ -1,0 +1,111 @@
+@import "main-bx";
+
+.contacts {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1400px) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__title-text {
+        font-size: 36px;
+        color: $color_text;
+        font-family: $accent_font_bld;
+        line-height: 120%;
+
+        @media (max-width: 1400px) {
+            font-size: 30px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @media (max-width: 1400px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__content-text {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        @media (max-width: 1400px) {
+            width: 90%;
+        }
+    }
+
+    &__description-text {
+        font-size: 16px;
+        color: $color_text;
+        font-family: $accent_font;
+    }
+
+    &__description-text-bold {
+        font-size: 20px;
+        color: $color_text;
+        font-family: $accent_font_bld;
+    }
+
+    &__description {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        @media (max-width: 1000px) {
+            width: 90%;
+        }
+    }
+
+    &__description-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            gap:40px;
+        }
+    }
+
+    &__button {
+        text-transform: uppercase;
+        width: 300px;
+        height: 50px;
+        font-size: 14px;
+        color: $color_white;
+        font-family: $accent_font_med;
+        background-color: $color_red;
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+
+    &__map{
+        width: 45%;
+        @media (max-width: 1400px) {
+            width: 100%;
+        }
+    }
+
+}

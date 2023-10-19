@@ -1,0 +1,59 @@
+@import "main-bx";
+
+.banner {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1200px) {
+    margin-top: 90px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -170px;
+    gap: 40px;      
+    width: 80%;
+    align-self: center;
+    height: auto;
+    @media (max-width: 1600px) {
+      width: 90%;
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;    
+      background-color:#151515;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      box-sizing: border-box;
+      margin-top: 0px;
+    }
+  }
+
+  &__description-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width: 380px;
+    height: 118px;
+    background: rgba(33, 37, 41, 0.70);
+    backdrop-filter: blur(2px);
+    @media (max-width: 1000px) {
+      width: 80%;
+      justify-content: flex-start;
+    }
+  }
+
+  &__description-text {
+    font-size: 18px;
+    color: $color_white;
+    font-family: $accent_font_med;
+  }
+
+}

@@ -1,0 +1,165 @@
+@import "main-bx";
+
+.timer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap:140px;
+  flex-direction: row;
+  background-color: $color_text;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1000px) {
+    margin-top: 0px;
+  }
+
+  &__content{
+    width: 80%;
+    display: flex;
+    height: 210px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1400px) {
+      flex-direction: column;   
+      height: auto;   
+      margin-top: 30px;
+      margin-bottom: 30px;
+      justify-content: center;
+      gap: 30px;
+    }
+    @media (max-width: 1600px) {
+      width: 90%;
+    }
+  }
+
+  &__left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:24px;
+    @media (max-width: 1400px) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:20px;
+    @media (max-width: 1400px) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__description-text {
+    font-size: 18px;
+    color: $color_white;
+    font-family: $accent_font_med;
+    @media (max-width: 1000px) {
+      text-align: center;
+    }
+  }
+
+  &__left-block-text {
+    font-size: 26px;
+    color: $color_white;
+    font-family: $accent_font_med;
+    @media (max-width: 1000px) {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  &__mini-text {
+    font-size: 11px;
+    color: $color_white;
+    font-family: $accent_font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    @media (max-width: 1000px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  &__time-text {
+    font-size: 50px;
+    color: $color_white;
+    font-family: $accent_font_bld;
+    @media (max-width: 1000px) {
+      font-size: 30px;
+    }
+  }
+  
+  &__time {
+    display: flex;
+    flex-direction: row;
+    gap:45px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1000px) {
+      gap:15px;
+    }
+  }
+  
+  &__fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    @media (max-width: 1000px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    font-size: 14px;
+    color: $color_gray2;
+    font-family: $accent_font;
+    background-color: $color_white;
+    padding: 16px 16px 16px 16px;
+    width: 270px;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+    
+  &__button {
+    font-size: 14px;
+    color: $color_white;
+    font-family: $accent_font_med;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-transform: uppercase;
+    background-color: $color_red;
+    padding: 16px 24px;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+
+  &__feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+    @media (max-width: 1400px) {
+      align-items: center;
+      width: 90%;
+    }
+  }
+
+}

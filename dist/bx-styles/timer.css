@@ -1,0 +1,151 @@
+.timer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 140px;
+  flex-direction: row;
+  background-color: #212529;
+  justify-content: center;
+  align-items: center
+}
+.timer__content {
+  width: 80%;
+  display: flex;
+  height: 210px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+.timer__left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px
+}
+.timer__right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px
+}
+.timer__description-text {
+  font-size: 18px;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif
+}
+.timer__left-block-text {
+  font-size: 26px;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif
+}
+.timer__mini-text {
+  font-size: 11px;
+  color: #fff;
+  font-family: TacticSans-REG,sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0
+}
+.timer__time-text {
+  font-size: 50px;
+  color: #fff;
+  font-family: TacticSans-BLD,sans-serif
+}
+.timer__time {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  justify-content: center;
+  align-items: center
+}
+.timer__fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+.timer__input {
+  font-size: 14px;
+  color: #adb5bd;
+  font-family: TacticSans-REG,sans-serif;
+  background-color: #fff;
+  padding: 16px;
+  width: 270px
+}
+.timer__button {
+  font-size: 14px;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #ca0012;
+  padding: 16px 24px
+}
+.timer__feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px
+}
+@media (max-width:1600px) {
+  .timer__content {
+    width: 90%
+  }
+}
+@media (max-width:1400px) {
+  .timer__content {
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap: 30px
+  }
+  .timer__left-block,
+  .timer__right-block {
+    width: 100%;
+    align-items: center
+  }
+  .timer__feedback {
+    align-items: center;
+    width: 90%
+  }
+}
+@media (max-width:1000px) {
+  .timer {
+    margin-top: 0
+  }
+  .timer__description-text {
+    text-align: center
+  }
+  .timer__left-block-text {
+    text-align: center;
+    font-size: 20px
+  }
+  .timer__mini-text {
+    width: 100%;
+    text-align: center
+  }
+  .timer__time-text {
+    font-size: 30px
+  }
+  .timer__time {
+    gap: 15px
+  }
+  .timer__fields {
+    width: 100%;
+    flex-direction: column
+  }
+  .timer__button,
+  .timer__input {
+    width: 100%
+  }
+}

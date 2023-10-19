@@ -1,0 +1,100 @@
+@import "main-bx";
+
+.stocks {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+
+  @media (max-width: 1000px) {
+    gap:30px;
+    margin-top: 50px;
+  }
+
+  &__content {    
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: $color_gray3;
+    @media (max-width: 1600px) {  
+        width: 90%;
+      }
+      @media (max-width: 1400px) { 
+        flex-wrap: wrap;
+        gap:30px;
+      }
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 5%;
+      }
+  }
+
+  &__title-text {
+    font-size: 36px;
+    color: $color_text;
+    font-family: $accent_font_bld;
+    line-height: 120%;
+    @media (max-width: 1400px) {
+      font-size: 30px;
+    }
+  }
+
+  
+  &__item {    
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid $color_gray;
+    background: $color_white;
+    padding-bottom: 30px;      
+    @media (max-width: 1000px) {
+        width: 100%;
+      }
+      @media (max-width: 1400px) {  
+        width: 48%;
+      }
+  }
+
+  &__item-text {
+    font-size: 30px;
+    color: $color_text;
+    font-family: $accent_font_med;
+    width: 90%;    
+    align-self: center;
+  }
+
+  &__button{ 
+    width: 90%;
+    height: 50px;
+    font-size: 14px;
+    color: $color_white;
+    font-family: $accent_font_med;
+    align-self: center;
+    text-transform: uppercase;
+    background-color: $color_red;
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px; 
+  }
+
+  &__dot{
+    cursor: pointer; 
+  }
+
+}

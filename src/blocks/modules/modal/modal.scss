@@ -1,0 +1,136 @@
+@import "main-bx";
+
+.modal {
+    position: fixed;
+    top: 250px;
+    width: 50%;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-self:center;
+    align-items: center;
+    background-color: $color_white;
+    @media (max-width: 1000px) {
+      top: 150px;
+      width: 90%;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        align-self: center;
+        gap: 30px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    &__head {
+        margin-top:20px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__description-text {
+        font-size: 14px;
+        color: $color_text;
+        font-family: $accent_font;
+    }
+
+    &__description-text-bold {
+        font-size: 24px;
+        color: $color_text;
+        font-family: $accent_font_bld;
+    }
+
+    &__description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__mini-text {
+        font-size: 11px;
+        color: $color_text;
+        font-family: $accent_font;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+        text-align: center;
+      }
+   
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  &__svg {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  &__description-item {
+    font-size: 14px;
+    color: $color_text;
+    font-family: $accent_font;
+  }
+
+  &__buttons-item-red{
+    height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color_white;
+    font-family: $accent_font_med;
+    background-color: $color_red;
+      width: 100%;
+  }
+
+  &__input {
+    font-size: 14px;
+    color: $color_gray2;
+    font-family: $accent_font;
+    background-color: $color_white;
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+    border: 2px solid $color_gray;
+  }
+     
+  &__points{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+    &__points-text {
+    font-size: 16px;
+    color: $color_text;
+    font-family: $accent_font;
+}
+
+}

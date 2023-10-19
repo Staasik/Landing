@@ -1,0 +1,43 @@
+$default-font-color: #000000;
+$base_font: sans-serif;
+$accent_font: 'TacticSans-REG', $base_font;
+$accent_font_med: 'TacticSans-MED', $base_font;
+$accent_font_bld: 'TacticSans-BLD', $base_font;
+
+$color_gray: #DEE2E6;
+$color_black: #000000;
+$color_text: #212529;
+$color_white: #ffffff;
+$color_gray2: #ADB5BD;
+$color_red: #CA0012;
+$color_gray3: #F8F8F8;
+
+
+// $clor_dark: ;
+
+$transition: 0.25s;
+
+$gradient_1 : linear-gradient(271.2deg, rgba(254, 114, 0, 0.9) 0.86%, rgba(232, 27, 35, 0.9) 70.76%);
+
+$body_width: 1920px;
+
+$breaks: (
+        desktop_lg: 1600px,
+        desktop: 1440px,
+        laptop: 1380px,
+        tablet: 1100px,
+        tablet_md: 1024px,
+        mobile: 768px,
+        mobile_sm: 575px,
+        mobile_xs: 479px,
+        mobile_xxs: 375px,
+);
+
+$container: (
+        desktop_lg: 1400px,
+        desktop: 1140px,
+        laptop: 1024px,
+        tablet: 768px,
+        mobile: 345px,
+        mobile_xs: 280px,
+);

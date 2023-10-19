@@ -1,0 +1,84 @@
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff
+}
+.menu__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  width: 90%
+}
+.menu__head {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+.menu__description-text {
+  font-size: 14px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif
+}
+.menu__description-text-bold {
+  font-size: 18px;
+  color: #212529;
+  font-family: TacticSans-BLD,sans-serif
+}
+.menu__description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column
+}
+.menu__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 35px
+}
+.menu__svg {
+  display: flex;
+  flex-direction: row;
+  gap: 15px
+}
+.menu__description-item {
+  font-size: 14px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif
+}
+.menu__buttons-item-red {
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif;
+  background-color: #ca0012;
+  width: 100%
+}
+.menu__points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 35px
+}
+.menu__points-text {
+  font-size: 16px;
+  color: #212529;
+  font-family: TacticSans-REG,sans-serif
+}

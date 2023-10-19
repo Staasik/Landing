@@ -1,0 +1,107 @@
+@import "main-bx";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $color_black;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__description-item {
+    font-size: 14px;
+    color: $color_white;
+    font-family: $accent_font;
+  }
+
+  &__description-item_big {
+    font-size: 24px;
+    color: $color_white;
+    font-family: $accent_font_bld;
+  }
+  
+  &__content {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    @media (max-width: 1600px) {
+      width: 90%;
+    }
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+  }
+
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__left-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  &__button {
+    text-transform: uppercase;
+    background-color: $color_red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+  }
+  
+  &__button-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $color_white;
+    font-family: $accent_font_med;
+  }
+
+  &__svg {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  &__menu {
+    background-color: $color_white;
+    width: 100%;
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__menu-item {    
+    font-size: 18px;
+    color: $color_text;
+    font-family: $accent_font_med;
+  }
+}

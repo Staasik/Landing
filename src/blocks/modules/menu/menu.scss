@@ -1,0 +1,99 @@
+@import "main-bx";
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_white;
+    
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        align-self: center;
+        gap: 15px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    &__head {
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__description-text {
+        font-size: 14px;
+        color: $color_text;
+        font-family: $accent_font;
+    }
+
+    &__description-text-bold {
+        font-size: 18px;
+        color: $color_text;
+        font-family: $accent_font_bld;
+    }
+
+    &__description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+   
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  &__svg {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  &__description-item {
+    font-size: 14px;
+    color: $color_text;
+    font-family: $accent_font;
+  }
+
+  &__buttons-item-red{
+    height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color_white;
+    font-family: $accent_font_med;
+    background-color: $color_red;
+      width: 100%;
+  }
+
+     
+  &__points{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+    &__points-text {
+    font-size: 16px;
+    color: $color_text;
+    font-family: $accent_font;
+}
+
+}

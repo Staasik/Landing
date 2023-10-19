@@ -1,0 +1,228 @@
+@charset "UTF-8";
+.banner2 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column
+}
+.banner2__description {
+  background-image: url(../../../img/content/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%
+}
+.banner2__description-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  width: 90%
+}
+.banner2__description-two {
+  background-image: url(../../../img/content/фон.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60%;
+  gap: 30px;
+  height: 500px;
+  width: 100%
+}
+.banner2__description-two-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  height: 500px;
+  width: 90%
+}
+.banner2__description-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 80%;
+  align-self: center;
+  height: auto
+}
+.banner2__description-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 380px;
+  height: 118px;
+  background: rgba(33,37,41,.7);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px)
+}
+.banner2__description-text,
+.banner2__subtitle-text {
+  font-size: 18px;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif
+}
+.banner2__description-text-med {
+  font-size: 26px;
+  color: #fff;
+  font-family: TacticSans-REG,sans-serif
+}
+.banner2__input {
+  font-size: 14px;
+  color: #adb5bd;
+  font-family: TacticSans-REG,sans-serif;
+  background-color: #fff;
+  padding: 16px;
+  width: 270px
+}
+.banner2__button {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: TacticSans-MED,sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ca0012;
+  padding: 16px 24px
+}
+.banner2__mini-text {
+  font-size: 11px;
+  color: #fff;
+  font-family: TacticSans-REG,sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0
+}
+.banner2__title-text {
+  font-size: 36px;
+  color: #fff;
+  font-family: TacticSans-MED,sans-serif
+}
+.banner2__fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+.banner2__feedback {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+.banner2__feedback-down {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px
+}
+@media (max-width:1600px) {
+  .banner2__description {
+    height: 400px
+  }
+  .banner2__description-content {
+    gap: 20px
+  }
+  .banner2__description-two {
+    height: 400px;
+    gap: 20px;
+    padding-left: 55%
+  }
+  .banner2__description-two-content {
+    height: 400px;
+    gap: 20px
+  }
+  .banner2__description-items {
+    width: 90%
+  }
+}
+@media (max-width:1400px) {
+  .banner2__description {
+    background-image: url(../../../img/content/bg_tel.png);
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px
+  }
+  .banner2__description-two {
+    background-image: none;
+    background-color: #000;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0
+  }
+  .banner2__description-two-content {
+    align-items: center;
+    height: auto
+  }
+  .banner2__description-text-med {
+    width: 90%;
+    text-align: center;
+    font-size: 16px
+  }
+  .banner2__feedback {
+    width: 90%
+  }
+  .banner2__feedback-down {
+    width: 90%;
+    align-items: center
+  }
+}
+@media (max-width:1000px) {
+  .banner2__description-items {
+    flex-direction: column;
+    gap: 20px;
+    background-color: #151515;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    margin-top: 0
+  }
+  .banner2__description-item {
+    width: 90%;
+    justify-content: flex-start
+  }
+  .banner2__subtitle-text {
+    width: 90%;
+    text-align: center
+  }
+  .banner2__button,
+  .banner2__input {
+    width: 100%
+  }
+  .banner2__mini-text {
+    text-align: center
+  }
+  .banner2__title-text {
+    width: 90%;
+    text-align: center;
+    font-size: 24px
+  }
+  .banner2__fields {
+    width: 100%;
+    flex-direction: column
+  }
+}

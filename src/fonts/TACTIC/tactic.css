@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'TacticRound-REG';
+    src: url('TACTICROUND-REG.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticRound-MED';
+    src: url('TACTICROUNDEXD-MED.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSans-BLD';
+    src: url('TACTICSANS-BLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSans-BLDIT';
+    src: url('TACTICSANS-BLDIT.OTF') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'TacticSans-LGT';
+    src: url('TACTICSANS-LGT.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSans-MED';
+    src: url('TACTICSANS-MED.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSans-REG';
+    src: url('TACTICSANS-REG.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSansExD-BLD';
+    src: url('TACTICSANSEXD-BLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSansExD-MED';
+    src: url('TACTICSANSEXD-MED.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TacticSansExD-REG';
+    src: url('TACTICSANSEXD-REG.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
