@@ -2,7 +2,7 @@ $(function () {
   function hideElements() {
     const screenWidth = window.innerWidth;
     const logo_menu = document.getElementById('menu_hamburger');
-    const menu = document.getElementById('menu');ъ
+    const menu = document.getElementById('menu');
     const header__right = document.getElementById('header__right-block');
     const header__left = document.getElementById('header__left-block');
     var header_logo = document.getElementById('header_logo');

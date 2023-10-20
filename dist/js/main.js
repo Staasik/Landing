@@ -249,7 +249,6 @@
     var screenWidth = window.innerWidth;
     var logo_menu = document.getElementById('menu_hamburger');
     var menu = document.getElementById('menu');
-    ъ;
     var header__right = document.getElementById('header__right-block');
     var header__left = document.getElementById('header__left-block');
     var header_logo = document.getElementById('header_logo');
