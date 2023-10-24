@@ -140,14 +140,10 @@
     border: 1px solid $color_gray;
     display: flex;
     width: 30%;
-    height: 50px;
-    padding: 21px 20px 15px 20px;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
+    padding: 20px 20px 15px 20px;
     @media (max-width: 1000px) {
       width: 100%;
-    }
+    }  
   }
 
   &__parameters-item-text { 
@@ -190,7 +186,22 @@
 
 }
 
-.img{
+img{
   width: 100%;
   height: auto;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../../../img/svg/ArrowDown.svg") no-repeat right center;
+  background-size: 12px 6px; /* Установите размер вашей иконки */
+  background-position: right 20px center;
+}
+
+/* Стилизация выпадающего списка при открытии */
+select:focus {
+  outline: none; /* Убираем контур при фокусировке */
+  border: 1px solid #007bff; /* Изменяем границу при фокусировке */
 }

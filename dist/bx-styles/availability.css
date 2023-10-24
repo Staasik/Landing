@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .availability {
   margin-top: 100px;
   width: 100%;
@@ -81,11 +82,7 @@
   border: 1px solid #dee2e6;
   display: flex;
   width: 30%;
-  height: 50px;
-  padding: 21px 20px 15px;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0
+  padding: 20px 20px 15px
 }
 .availability__parameters-item-text {
   font-size: 14px;
@@ -119,9 +116,20 @@
   color: #212529;
   font-family: TacticSans-BLD,sans-serif
 }
-.img {
+img {
   width: 100%;
   height: auto
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../../img/svg/ArrowDown.svg) right 20px center no-repeat;
+  background-size: 12px 6px
+}
+select:focus {
+  outline: 0;
+  border: 1px solid #007bff
 }
 @media (max-width:1600px) {
   .availability__content,

@@ -105,3 +105,14 @@
     font-family: $accent_font_med;
   }
 }
+
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; 
+  margin: -100px 0 0;
+}
+
+a{
+  color: $color_black;
+}
