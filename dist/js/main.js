@@ -374,7 +374,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
-  var endDate = new Date('2023-10-31 23:59:59').getTime(); // Дата окончания акции
+  var endDate = new Date('2023-11-31 23:59:59').getTime(); // Дата окончания акции
 
   // Функция для обновления таймера
   function updateTimer() {

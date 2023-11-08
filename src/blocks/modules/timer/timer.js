@@ -1,5 +1,5 @@
 $(function () {
-    const endDate = new Date('2023-10-31 23:59:59').getTime(); // Дата окончания акции
+    const endDate = new Date('2023-11-31 23:59:59').getTime(); // Дата окончания акции
 
     // Функция для обновления таймера
     function updateTimer() {

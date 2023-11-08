@@ -738,15 +738,15 @@ img {
   font-family: "TacticSans-MED", sans-serif;
 }
 
+.header__a {
+  color: #000000;
+}
+
 :target::before {
   content: "";
   display: block;
   height: 100px;
   margin: -100px 0 0;
-}
-
-a {
-  color: #000000;
 }
 
 .footer {
@@ -770,6 +770,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  line-height: 0;
 }
 
 .banner__description {
@@ -1066,6 +1067,8 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000000;
 }
 
 .models__svg {

@@ -1,42 +1,43 @@
-<div class="timer">        
-    <div class="timer__content">
-        <div class="timer__left-block">
-            <p class="timer__left-block-text">До конца акции осталось</p>
-            <div class="timer__time" id="countdown">
-                <p class="timer__mini-text">
-                  <span id="days" class="timer__time-text">11</span> дней
-                </p>
-                <p class="timer__time-text">:</p>
-                <p class="timer__mini-text">
-                  <span id="hours" class="timer__time-text">12</span> часов
-                </p>
-                <p class="timer__time-text">:</p>
-                <p class="timer__mini-text">
-                  <span id="minutes" class="timer__time-text">34</span> минут
-                </p>
-                <p class="timer__time-text">:</p>
-                <p class="timer__mini-text">
-                  <span id="seconds" class="timer__time-text">56</span> секунд
-                </p>
-              </div>
-        </div>
-          <!-- Исходное изображение -->
-          <svg width="1" height="130" id="svgImage1">
-              <use xlink:href="./img/sprites/sprite.svg#bigline"></use>
-          </svg>
-          <!-- Изображение для больших экранов -->
-          <svg style="display: none;" width="100%" height="1" id="svgImage2">
-              <use xlink:href="./img/sprites/sprite.svg#bigline1"></use>
-          </svg>
-        <div class="timer__right-block">
-            <p class="timer__description-text">Успейте зафиксировать спецпредложение</p>   
-            <div class="timer__feedback">         
-              <form action="" method="get" class="timer__fields">
-                <input class="timer__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
-                <button id="get_button" class="timer__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
-              </form>
-              <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных данных</p>
-          </div>
-        </div>
+<div class="timer">
+  <div class="timer__content">
+    <div class="timer__left-block">
+      <p class="timer__left-block-text">До конца акции осталось</p>
+      <div class="timer__time" id="countdown">
+        <p class="timer__mini-text">
+          <span id="days" class="timer__time-text">11</span> дней
+        </p>
+        <p class="timer__time-text">:</p>
+        <p class="timer__mini-text">
+          <span id="hours" class="timer__time-text">12</span> часов
+        </p>
+        <p class="timer__time-text">:</p>
+        <p class="timer__mini-text">
+          <span id="minutes" class="timer__time-text">34</span> минут
+        </p>
+        <p class="timer__time-text">:</p>
+        <p class="timer__mini-text">
+          <span id="seconds" class="timer__time-text">56</span> секунд
+        </p>
+      </div>
     </div>
+    <!-- Исходное изображение -->
+    <svg width="1" height="130" id="svgImage1">
+      <use xlink:href="./img/sprites/sprite.svg#bigline"></use>
+    </svg>
+    <!-- Изображение для больших экранов -->
+    <svg style="display: none;" width="100%" height="1" id="svgImage2">
+      <use xlink:href="./img/sprites/sprite.svg#bigline1"></use>
+    </svg>
+    <div class="timer__right-block">
+      <p class="timer__description-text">Успейте зафиксировать спецпредложение</p>
+      <div class="timer__feedback">
+        <form action="" method="get" class="timer__fields">
+          <input class="timer__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
+          <button id="get_button" class="timer__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+        </form>
+        <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных
+          данных</p>
+      </div>
+    </div>
+  </div>
 </div>

@@ -39,12 +39,12 @@
     <body>
         <header class="header" id="defaultMenu">
   <div class="header__content">
-    <a id="header_logo" href="#" class="header__logo" style="display: none;">
-      <img loading="lazy" width="180px" height="20px" src="./img/content/logo/logo_chery_1.webp" alt="logo">
+    <a id="header_logo" href="#" class="header__logo header__a" style="display: none;">
+      <img loading="lazy" width="180" height="20" src="./img/content/logo/logo_chery_1.webp" alt="logo">
     </a>
     <div id="header__right-block" class="header__right-block">
-      <a href="#" class="header__logo">
-        <img loading="lazy" width="180px" height="20px" src="./img/content/logo/logo_chery_1.webp" alt="logo">
+      <a href="#" class="header__logo header__a">
+        <img loading="lazy" width="180" height="20" src="./img/content/logo/logo_chery_1.webp" alt="logo">
       </a>
       <div class="header__description">
         <p class="header__description-item_big">Тон-Авто</p>
@@ -63,7 +63,7 @@
           <svg width="16" height="16">
             <use xlink:href="./img/sprites/sprite.svg#call"></use>
           </svg>
-          <p class="header__description-item">+7 (xxx) xxx-xx-xx</p>
+          <a href="" class="header__description-item">+7 (xxx) xxx-xx-xx</a>
         </div>
       </div>
       <div class="header__button">
@@ -74,12 +74,12 @@
       <use xlink:href="./img/sprites/sprite.svg#memu"></use>
     </svg>
   </div>
-  <div id="menu" class="header__menu">
-    <p class="header__menu-item"><a href="#section1">Преимущества</a></p>
-    <p class="header__menu-item"><a href="#section2">Модельный ряд</a></p>
-    <p class="header__menu-item"><a href="#section3">Кредитные предложения</a></p>
-    <p class="header__menu-item"><a href="#section4">Контакты</a></p>
-  </div>
+  <nav id="menu" class="header__menu">
+    <p class="header__menu-item"><a href="#section1" class="header__a">Преимущества</a></p>
+    <p class="header__menu-item"><a href="#section2" class="header__a">Модельный ряд</a></p>
+    <p class="header__menu-item"><a href="#section3" class="header__a">Кредитные предложения</a></p>
+    <p class="header__menu-item"><a href="#section4" class="header__a">Контакты</a></p>
+  </nav>
 </header>
 
 <div class="banner">    
@@ -108,47 +108,48 @@
         </div>
     </div>
 </div>
-<div class="timer">        
-    <div class="timer__content">
-        <div class="timer__left-block">
-            <p class="timer__left-block-text">До конца акции осталось</p>
-            <div class="timer__time" id="countdown">
-                <p class="timer__mini-text">
-                  <span id="days" class="timer__time-text">11</span> дней
-                </p>
-                <p class="timer__time-text">:</p>
-                <p class="timer__mini-text">
-                  <span id="hours" class="timer__time-text">12</span> часов
-                </p>
-                <p class="timer__time-text">:</p>
-                <p class="timer__mini-text">
-                  <span id="minutes" class="timer__time-text">34</span> минут
-                </p>
-                <p class="timer__time-text">:</p>
-                <p class="timer__mini-text">
-                  <span id="seconds" class="timer__time-text">56</span> секунд
-                </p>
-              </div>
-        </div>
-          <!-- Исходное изображение -->
-          <svg width="1" height="130" id="svgImage1">
-              <use xlink:href="./img/sprites/sprite.svg#bigline"></use>
-          </svg>
-          <!-- Изображение для больших экранов -->
-          <svg style="display: none;" width="100%" height="1" id="svgImage2">
-              <use xlink:href="./img/sprites/sprite.svg#bigline1"></use>
-          </svg>
-        <div class="timer__right-block">
-            <p class="timer__description-text">Успейте зафиксировать спецпредложение</p>   
-            <div class="timer__feedback">         
-              <form action="" method="get" class="timer__fields">
-                <input class="timer__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
-                <button id="get_button" class="timer__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
-              </form>
-              <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных данных</p>
-          </div>
-        </div>
+<div class="timer">
+  <div class="timer__content">
+    <div class="timer__left-block">
+      <p class="timer__left-block-text">До конца акции осталось</p>
+      <div class="timer__time" id="countdown">
+        <p class="timer__mini-text">
+          <span id="days" class="timer__time-text">11</span> дней
+        </p>
+        <p class="timer__time-text">:</p>
+        <p class="timer__mini-text">
+          <span id="hours" class="timer__time-text">12</span> часов
+        </p>
+        <p class="timer__time-text">:</p>
+        <p class="timer__mini-text">
+          <span id="minutes" class="timer__time-text">34</span> минут
+        </p>
+        <p class="timer__time-text">:</p>
+        <p class="timer__mini-text">
+          <span id="seconds" class="timer__time-text">56</span> секунд
+        </p>
+      </div>
     </div>
+    <!-- Исходное изображение -->
+    <svg width="1" height="130" id="svgImage1">
+      <use xlink:href="./img/sprites/sprite.svg#bigline"></use>
+    </svg>
+    <!-- Изображение для больших экранов -->
+    <svg style="display: none;" width="100%" height="1" id="svgImage2">
+      <use xlink:href="./img/sprites/sprite.svg#bigline1"></use>
+    </svg>
+    <div class="timer__right-block">
+      <p class="timer__description-text">Успейте зафиксировать спецпредложение</p>
+      <div class="timer__feedback">
+        <form action="" method="get" class="timer__fields">
+          <input class="timer__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
+          <button id="get_button" class="timer__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+        </form>
+        <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных
+          данных</p>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="advantages" id="section1">   
     <p class="advantages__title">Наши преимущества</p>
@@ -216,7 +217,7 @@
     <div class="models__items">
         <div class="models__item">
             <div class="models__img">
-                <img loading="lazy" width="450px" height="330px" src="../../../img/content/Model_Range/arrizo_8.webp" alt="car">
+                <img loading="lazy" width="450" height="330" src="../../../img/content/Model_Range/arrizo_8.webp" alt="car">
             </div> 
             <div class="models__description">                
                 <div class="models__description-title">
@@ -228,9 +229,6 @@
                         <p class="models__gift-text models__svg-text">комплект зимней резины в подарок</p>
                     </div>
                 </div>
-                <svg width="100%" height="2">
-                    <use xlink:href="./img/sprites/sprite.svg#line_gift"></use>
-                </svg>
                 <div class="models__specifications">
                     <div class="models__specifications-item">
                         <svg width="22" height="22">
@@ -272,7 +270,7 @@
         </div>
         <div class="models__item">
             <div class="models__img">
-                <img loading="lazy" width="450px" height="330px" src="../../../img/content/Model_Range/tiggo_7_pro_max.webp" alt="car">
+                <img loading="lazy" width="450" height="330" src="../../../img/content/Model_Range/tiggo_7_pro_max.webp" alt="car">
             </div> 
             <div class="models__description">                
                 <div class="models__description-title">
@@ -284,9 +282,6 @@
                         <p class="models__gift-text models__svg-text">комплект зимней резины в подарок</p>
                     </div>
                 </div>
-                <svg width="100%" height="2">
-                    <use xlink:href="./img/sprites/sprite.svg#line_gift"></use>
-                </svg>
                 <div class="models__specifications">
                     <div class="models__specifications-item">
                         <svg width="22" height="22">
@@ -328,7 +323,7 @@
         </div>
         <div class="models__item">
             <div class="models__img">
-                <img loading="lazy" width="450px" height="330px" src="../../../img/content/Model_Range/tiggo_7_pro.webp" alt="car">
+                <img loading="lazy" width="450" height="330" src="../../../img/content/Model_Range/tiggo_7_pro.webp" alt="car">
             </div> 
             <div class="models__description">                
                 <div class="models__description-title">
@@ -340,9 +335,6 @@
                         <p class="models__gift-text models__svg-text">комплект зимней резины в подарок</p>
                     </div>
                 </div>
-                <svg width="100%" height="2">
-                    <use xlink:href="./img/sprites/sprite.svg#line_gift"></use>
-                </svg>
                 <div class="models__specifications">
                     <div class="models__specifications-item">
                         <svg width="22" height="22">
@@ -388,17 +380,17 @@
     <p class="stocks__title-text">Акции</p>
     <div class="stocks__content">
         <div class="stocks__item">
-            <img loading="lazy" width="450px" height="330px" style="align-self:center" src="./img/content/Model_Range/tiggo_8.webp" alt="car">
+            <img loading="lazy" width="450" height="330" style="align-self:center" src="./img/content/Model_Range/tiggo_8.webp" alt="car">
             <p class="stocks__item-text">Tiggo 8</p>
             <button class="stocks__button">Узнать цену по акции</button>
         </div>
         <div class="stocks__item">
-            <img loading="lazy" width="450px" height="330px" style="align-self:center" src="./img/content/Model_Range/arrizo_8.webp" alt="car">
+            <img loading="lazy" width="450" height="330" style="align-self:center" src="./img/content/Model_Range/arrizo_8.webp" alt="car">
             <p class="stocks__item-text">ARRIZO 8</p>
             <button class="stocks__button">Узнать цену по акции</button>
         </div>
         <div class="stocks__item">
-            <img loading="lazy" width="450px" height="330px" style="align-self:center" src="./img/content/Model_Range/tiggo_8_pro_max.webp" alt="car">
+            <img loading="lazy" width="450" height="330" style="align-self:center" src="./img/content/Model_Range/tiggo_8_pro_max.webp" alt="car">
             <p class="stocks__item-text">Tiggo 8 PRO MAX</p>
             <button class="stocks__button">Узнать цену по акции</button>
         </div>
@@ -440,7 +432,7 @@
     </div>
     <div class="availability__content">
         <div class="availability__item">
-            <img loading="lazy" width="450px" height="330px" style="align-self:center"
+            <img loading="lazy" width="450" height="330" style="align-self:center"
                 src="./img/content/Model_Range/tiggo_8.webp" alt="car">
             <p class="availability__item-text">Tiggo 8</p>
             <div class="availability__specifications">
@@ -468,7 +460,7 @@
             <button class="availability__button">Получить предложение</button>
         </div>
         <div class="availability__item">
-            <img loading="lazy" width="450px" height="330px" style="align-self:center"
+            <img loading="lazy" width="450" height="330" style="align-self:center"
                 src="./img/content/Model_Range/tiggo_4_pro.webp" alt="car">
             <p class="availability__item-text">Tiggo 4 pro</p>
             <div class="availability__specifications">
@@ -496,7 +488,7 @@
             <button class="availability__button">Получить предложение</button>
         </div>
         <div class="availability__item">
-            <img loading="lazy" width="450px" height="330px" style="align-self:center"
+            <img loading="lazy" width="450" height="330" style="align-self:center"
                 src="./img/content/Model_Range/tiggo_7_pro_max.webp" alt="car">
             <p class="availability__item-text">Tiggo 7 PRO MAX</p>
             <div class="availability__specifications">
@@ -588,7 +580,7 @@
                 </div>
                 <div class="contacts__description">
                     <p class="contacts__description-text">Телефон:</p>
-                    <p class="contacts__description-text-bold">+7 (xxx) xxx-xx-xx</p>
+                    <a href="" class="contacts__description-text-bold">+7 (xxx) xxx-xx-xx</a>
                 </div>
             </div>
             <div class="contacts__description">
@@ -603,7 +595,7 @@
     <div class="menu__content">
         <div class="menu__head">
             <a id="menu_logo" href="#" class="header__logo">
-                <img loading="lazy" width="180px" height="20px" src="./img/content/logo/logo_chery_1.webp" alt="logo">
+                <img loading="lazy" width="180" height="20" src="./img/content/logo/logo_chery_1.webp" alt="logo">
             </a> 
             <svg width="40" height="40" id="menu_close">
                 <use xlink:href="./img/sprites/sprite.svg#close_menu"></use>
@@ -630,7 +622,7 @@
                 <svg width="16" height="16">
                     <use xlink:href="./img/sprites/sprite.svg#call-gray"></use>
                 </svg>
-                <p class="menu__description-item">+7 (xxx) xxx-xx-xx</p>
+                <a href="" class="menu__description-item">+7 (xxx) xxx-xx-xx</a>
             </div>
         </div>
         <button class="menu__buttons-item-red">Заказать звонок</button>
@@ -640,7 +632,7 @@
     <div class="modal__content">
         <div class="modal__head">
             <a id="logo" href="#" class="header__logo">
-                <img loading="lazy" width="180px" height="20px" src="./img/content/logo/logo_chery_1.webp" alt="logo">
+                <img loading="lazy" width="180" height="20" src="./img/content/logo/logo_chery_1.webp" alt="logo">
             </a>
             <svg width="20" height="20" id="modal_close">
                 <use xlink:href="./img/sprites/sprite.svg#close-circle"></use>

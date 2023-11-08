@@ -104,6 +104,10 @@
     color: $color_text;
     font-family: $accent_font_med;
   }
+
+  &__a{
+    color: $color_black;
+  }
 }
 
 :target::before {
@@ -113,6 +117,3 @@
   margin: -100px 0 0;
 }
 
-a{
-  color: $color_black;
-}
