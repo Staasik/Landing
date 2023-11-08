@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .banner2 {
   margin-top: 50px;
   width: 100%;
@@ -27,7 +26,7 @@
   width: 90%
 }
 .banner2__description-two {
-  background-image: url(../../../img/content/фон.png);
+  background-image: url(../../../img/content/fon.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

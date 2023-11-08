@@ -124,7 +124,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(../../../img/svg/ArrowDown.svg) right 20px center no-repeat;
+  background: url(../../../img/svg/arrow_down.svg) right 20px center no-repeat;
   background-size: 12px 6px
 }
 select:focus {
