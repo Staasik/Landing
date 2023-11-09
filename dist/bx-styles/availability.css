@@ -8,6 +8,9 @@
   flex-direction: column;
   gap: 50px
 }
+.availability__img {
+  align-self: center
+}
 .availability__content {
   width: 80%;
   display: flex;

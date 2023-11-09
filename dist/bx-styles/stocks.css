@@ -7,6 +7,9 @@
   flex-direction: column;
   gap: 50px
 }
+.stocks__img {
+  align-self: center
+}
 .stocks__content {
   width: 80%;
   display: flex;
@@ -15,6 +18,27 @@
   align-items: center;
   padding: 50px;
   background-color: #f8f8f8
+}
+.stocks .slick-initialized .slick-slide {
+  display: flex
+}
+.stocks .slick-track {
+  display: flex;
+  gap: 30px
+}
+.stocks .slick-dotted.slick-slider {
+  margin-bottom: 0
+}
+.stocks li.slick-active {
+  background-color: #ca0012
+}
+.stocks .stocks__item.slick-slide.slick-cloned.slick-active {
+  display: flex
+}
+.stocks__dot_item {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ca0012
 }
 .stocks__title-text {
   font-size: 36px;
@@ -83,7 +107,6 @@
     margin-top: 50px
   }
   .stocks__content {
-    flex-direction: column;
     justify-content: center;
     width: 100%;
     padding: 5%

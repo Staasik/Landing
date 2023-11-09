@@ -8,6 +8,9 @@
   justify-content: center;
   align-items: center
 }
+.timer__img {
+  display: none
+}
 .timer__content {
   width: 80%;
   display: flex;

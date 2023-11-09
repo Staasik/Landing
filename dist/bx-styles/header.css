@@ -25,6 +25,10 @@
   color: #fff;
   font-family: TacticSans-BLD,sans-serif
 }
+.header__logo_none,
+.header__menu_hamburger {
+  display: none
+}
 .header__content {
   height: 90px;
   display: flex;

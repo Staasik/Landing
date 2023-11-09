@@ -94,43 +94,36 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
-  var advantagesItems = document.querySelectorAll('.advantages__item');
-  var paginationDots = document.querySelectorAll('.advantages__dot');
-  var pagination = document.querySelector('.advantages__pagination');
-
-  // Обработчик клика на точку пагинации
-  paginationDots.forEach(function (dot, index) {
-    dot.addEventListener('click', function () {
-      advantagesItems.forEach(function (item, i) {
-        item.style.display = i === index ? 'flex' : 'none';
-      });
-      paginationDots.forEach(function (dot, i) {
-        var useElement = dot.querySelector('use');
-        dot.classList.toggle('active', i === index);
-        useElement.setAttribute('xlink:href', i === index ? './img/sprites/sprite.svg#advantages_dot_active' : './img/sprites/sprite.svg#advantages_dot');
-      });
+  $(window).on('load', function () {
+    $('.advantages__items').slick({
+      slidesToShow: 6,
+      dots: false,
+      appendDots: '.advantages__pagination',
+      dotsClass: "advantages__pagination",
+      customPaging: function customPaging(slick, index) {
+        return '<div class="advantages__dot_item"></div>';
+      },
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [{
+        breakpoint: 1000,
+        settings: {
+          centerMode: true,
+          variableWidth: true,
+          infinite: false,
+          slidesToShow: 1,
+          dots: true,
+          appendDots: '.advantages__pagination',
+          dotsClass: "advantages__pagination",
+          customPaging: function customPaging(slick, index) {
+            return '<div class="advantages__dot_item"></div>';
+          },
+          prevArrow: false,
+          nextArrow: false
+        }
+      }]
     });
   });
-
-  // Проверка ширины экрана 
-  function checkScreenWidth() {
-    var screenWidth = window.innerWidth;
-    if (screenWidth <= 1000) {
-      advantagesItems.forEach(function (item, index) {
-        item.style.display = index === 0 ? 'flex' : 'none';
-      });
-      document.querySelector('.advantages__pagination').style.display = 'flex';
-    } else {
-      document.querySelector('.advantages__pagination').style.display = 'none';
-      advantagesItems.forEach(function (item) {
-        item.style.display = 'flex';
-      });
-    }
-  }
-  window.addEventListener('load', function () {
-    checkScreenWidth();
-  });
-  window.addEventListener('resize', checkScreenWidth);
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
 
@@ -327,40 +320,25 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
-  var stocksItems = document.querySelectorAll('.stocks__item');
-  var stocksDots = document.querySelectorAll('.stocks__dot');
-
-  // Обработчик клика на точку пагинации
-  stocksDots.forEach(function (dot, index) {
-    dot.addEventListener('click', function () {
-      stocksItems.forEach(function (item, i) {
-        item.style.display = i === index ? 'flex' : 'none';
-      });
-      stocksDots.forEach(function (dot, i) {
-        var useElement = dot.querySelector('use');
-        dot.classList.toggle('active', i === index);
-        useElement.setAttribute('xlink:href', i === index ? './img/sprites/sprite.svg#advantages_dot_active' : './img/sprites/sprite.svg#advantages_dot');
-      });
+  $(window).on('load', function () {
+    $('.stocks__content').slick({
+      slidesToShow: 3,
+      dots: true,
+      appendDots: '.stocks__pagination',
+      dotsClass: "stocks__pagination",
+      customPaging: function customPaging(slick, index) {
+        return '<div class="stocks__dot_item"></div>';
+      },
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [{
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
     });
   });
-
-  // Проверка ширины экрана 
-  function checkScreenWidth() {
-    var screenWidth = window.innerWidth;
-    if (screenWidth <= 1000) {
-      stocksItems.forEach(function (item, index) {
-        item.style.display = index === 0 ? 'flex' : 'none';
-      });
-    } else {
-      stocksItems.forEach(function (item) {
-        item.style.display = 'flex';
-      });
-    }
-  }
-  window.addEventListener('load', function () {
-    checkScreenWidth();
-  });
-  window.addEventListener('resize', checkScreenWidth);
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
 

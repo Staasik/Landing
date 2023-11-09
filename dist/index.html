@@ -35,6 +35,9 @@
 
         <link rel="stylesheet" href="styles/main.css">
         <script defer async src="./libs/jquery-3.5.1.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css"/>
     </head>
     <body>
     <header class="header" id="defaultMenu">
@@ -226,26 +229,7 @@
             <p class="advantages__description-text">Кредитный платеж <br>от 8600 руб/мес.</p>
         </div>
     </div>
-    <div class="advantages__pagination">
-            <svg width="10" height="10" class="advantages__dot active">
-                <use xlink:href="./img/sprites/sprite.svg#advantages_dot_active"></use>
-            </svg>
-            <svg width="10" height="10" class="advantages__dot">
-                <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-            </svg>
-            <svg width="10" height="10" class="advantages__dot">
-                <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-            </svg>
-            <svg width="10" height="10" class="advantages__dot">
-                <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-            </svg>
-            <svg width="10" height="10" class="advantages__dot">
-                <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-            </svg>
-            <svg width="10" height="10" class="advantages__dot">
-                <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-            </svg>
-    </div>
+    <div class="advantages__pagination"></div>
 </section>
 <section class="models" id="section2">   
     <p class="models__title">Модельный ряд</p>
@@ -429,18 +413,23 @@
             <p class="stocks__item-text">Tiggo 8 PRO MAX</p>
             <button class="stocks__button">Узнать цену по акции</button>
         </div>
+        <div class="stocks__item">
+            <img loading="lazy" width="450" height="330" class="stocks__img" src="./img/content/Model_Range/tiggo_8.webp" alt="car">
+            <p class="stocks__item-text">Tiggo 8</p>
+            <button class="stocks__button">Узнать цену по акции</button>
+        </div>
+        <div class="stocks__item">
+            <img loading="lazy" width="450" height="330" class="stocks__img" src="./img/content/Model_Range/arrizo_8.webp" alt="car">
+            <p class="stocks__item-text">ARRIZO 8</p>
+            <button class="stocks__button">Узнать цену по акции</button>
+        </div>
+        <div class="stocks__item">
+            <img loading="lazy" width="450" height="330" class="stocks__img" src="./img/content/Model_Range/tiggo_8_pro_max.webp" alt="car">
+            <p class="stocks__item-text">Tiggo 8 PRO MAX</p>
+            <button class="stocks__button">Узнать цену по акции</button>
+        </div>
     </div>
-    <div class="stocks__pagination">
-        <svg width="10" height="10" class="stocks__dot active">
-            <use xlink:href="./img/sprites/sprite.svg#advantages_dot_active"></use>
-        </svg>
-        <svg width="10" height="10" class="stocks__dot">
-            <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-        </svg>
-        <svg width="10" height="10" class="stocks__dot">
-            <use xlink:href="./img/sprites/sprite.svg#advantages_dot"></use>
-        </svg>
-    </div>
+    <div class="stocks__pagination"></div>
 </section>
 
 <section class="availability">
@@ -735,10 +724,10 @@
 <!-- <script src="./libs/rotate.js"></script> -->
 <script defer async src="./libs/imask/imask.min.js"></script>
 <script defer async src="./js/main.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
 
   </body>
 </html>

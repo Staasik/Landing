@@ -34,12 +34,38 @@
         gap:30px;
       }
       @media (max-width: 1000px) {
-        flex-direction: column;
         justify-content: center;
         width: 100%;
         padding: 5%;
       }
   }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+
+  .slick-track{
+    display: flex;
+    gap:30px;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+li.slick-active {  
+  background-color:$color_red;
+}
+
+.stocks__item.slick-slide.slick-cloned.slick-active{
+  display: flex;
+}
+
+&__dot_item{
+  width:10px;
+  height:10px;
+  border: 1px solid $color_red;
+}
 
   &__title-text {
     font-size: 36px;

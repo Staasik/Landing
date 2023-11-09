@@ -21,6 +21,28 @@
   justify-content: space-between;
   align-items: center
 }
+.advantages .slick-initialized .slick-slide {
+  display: flex
+}
+.advantages .slick-track {
+  display: flex;
+  gap: 30px;
+  width: 100%!important
+}
+.advantages .slick-dotted.slick-slider {
+  margin-bottom: 0
+}
+.advantages li.slick-active {
+  background-color: #ca0012
+}
+.advantages advantages__item slick-slide slick-current slick-active .stocks__item.slick-slide.slick-cloned.slick-active {
+  display: flex
+}
+.advantages__dot_item {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ca0012
+}
 .advantages__item {
   display: flex;
   flex-direction: column;
@@ -36,11 +58,11 @@
   text-align: center
 }
 .advantages__pagination {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  display: none
+  gap: 20px
 }
 .advantages__dot {
   cursor: pointer
@@ -68,8 +90,10 @@
     margin-top: 50px
   }
   .advantages__items {
-    flex-direction: column;
     justify-content: center;
     gap: 20px
+  }
+  .advantages .slick-track {
+    width: 6305px!important
   }
 }
