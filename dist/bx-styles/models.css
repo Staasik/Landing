@@ -82,7 +82,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000
 }
 .models__svg {
   position: relative

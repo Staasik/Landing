@@ -29,6 +29,14 @@
     color: $color_white;
     font-family: $accent_font_bld;
   }
+
+  &__menu_hamburger{
+    display: none;
+  }
+
+  &__logo_none{
+    display: none;
+  }
   
   &__content {
     height: 90px;

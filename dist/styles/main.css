@@ -666,6 +666,14 @@ img {
   font-family: "TacticSans-BLD", sans-serif;
 }
 
+.header__menu_hamburger {
+  display: none;
+}
+
+.header__logo_none {
+  display: none;
+}
+
 .header__content {
   height: 90px;
   display: flex;
@@ -812,6 +820,10 @@ img {
   background-color: #212529;
   justify-content: center;
   align-items: center;
+}
+
+.timer__img {
+  display: none;
 }
 
 .timer__content {
@@ -961,6 +973,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  display: none;
 }
 
 .advantages__dot {
@@ -1152,6 +1165,10 @@ img {
   gap: 50px;
 }
 
+.stocks__img {
+  align-self: center;
+}
+
 .stocks__content {
   width: 80%;
   display: flex;
@@ -1220,6 +1237,10 @@ img {
   justify-content: center;
   flex-direction: column;
   gap: 50px;
+}
+
+.availability__img {
+  align-self: center;
 }
 
 .availability__content {

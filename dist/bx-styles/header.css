@@ -88,14 +88,14 @@
   color: #212529;
   font-family: TacticSans-MED,sans-serif
 }
+.header__a {
+  color: #000
+}
 :target::before {
   content: "";
   display: block;
   height: 100px;
   margin: -100px 0 0
-}
-__a {
-  color: #000
 }
 @media (max-width:1600px) {
   .header__content {
