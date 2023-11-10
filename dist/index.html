@@ -38,6 +38,7 @@
 
         <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     </head>
     <body>
     <header class="header" id="defaultMenu">
@@ -435,20 +436,17 @@
 <section class="availability">
     <p class="availability__title-text">Автомобили в наличии</p>
     <div class="availability__parameters">
-        <select class="availability__parameters-item availability__parameters-item-text" id="options" name="options">
-            <option value="">Модель</option>
+        <select class="availability__parameters-item availability__parameters-item-text select1" id="options" name="options">
             <option value="1">Модель 1</option>
             <option value="2">Модель 2</option>
             <option value="3">Модель 3</option>
         </select>
-        <select class="availability__parameters-item availability__parameters-item-text" id="options" name="options">
-            <option value="">Комплектация</option>
+        <select class="availability__parameters-item availability__parameters-item-text select2" id="options" name="options">
             <option value="1">Комплектация 1</option>
             <option value="2">Комплектация 2</option>
             <option value="3">Комплектация 3</option>
         </select>
-        <select class="availability__parameters-item availability__parameters-item-text" id="options" name="options">
-            <option value="">Мотор</option>
+        <select class="availability__parameters-item availability__parameters-item-text select3" id="options" name="options">
             <option value="1">Мотор 1</option>
             <option value="2">Мотор 2</option>
             <option value="3">Мотор 3</option>
@@ -728,6 +726,6 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </body>
 </html>
