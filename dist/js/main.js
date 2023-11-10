@@ -191,6 +191,20 @@
   }
   window.addEventListener('load', hideImageOnLargeScreen);
   window.addEventListener('resize', hideImageOnLargeScreen);
+
+  // Инициализация маски для телефона
+  var phoneMask = IMask(document.getElementById('phoneInput1'), {
+    mask: '+{7}(000)000-00-00'
+  });
+  var phoneMask = IMask(document.getElementById('phoneInput2'), {
+    mask: '+{7}(000)000-00-00'
+  });
+  var phoneMask = IMask(document.getElementById('phoneInput3'), {
+    mask: '+{7}(000)000-00-00'
+  });
+  var phoneMask = IMask(document.getElementById('phoneInput'), {
+    mask: '+{7}(000)000-00-00'
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
 

@@ -36,9 +36,9 @@
         <link rel="stylesheet" href="styles/main.css">
         <script defer async src="./libs/jquery-3.5.1.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     </head>
     <body>
     <header class="header" id="defaultMenu">
@@ -121,10 +121,10 @@
     </div>
 </div>
 
-<section class="banner">    
+<div class="banner">    
     <picture>
-        <source srcset="./img/content/banner_768х583.webp" media="(max-width: 1000px)" />
-        <img loading="lazy" width="2" height="1" style="width: 100%; height: auto;" src="./img/content/banner_1920х800.webp" alt="bannerImage" />
+        <source srcset="./img/content/banner_768х583.webp" media="(max-width: 1000px)">
+        <img loading="lazy" width="2" height="1" style="width: 100%; height: auto;" src="./img/content/banner_1920х800.webp" alt="bannerImage">
     </picture>     
     <div class="banner__description">
         <div class="banner__description-item">
@@ -146,8 +146,8 @@
             <p class="banner__description-text">Бонусы от салона</p>
         </div>
     </div>
-</section>
-<section class="timer">
+</div>
+<div class="timer">
   <div class="timer__content">
     <div class="timer__left-block">
       <p class="timer__left-block-text">До конца акции осталось</p>
@@ -180,8 +180,8 @@
     <div class="timer__right-block">
       <p class="timer__description-text">Успейте зафиксировать спецпредложение</p>
       <div class="timer__feedback">
-        <form action="" method="get" class="timer__fields">
-          <input class="timer__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
+        <form action="URL" method="get" class="timer__fields">
+          <input id="phoneInput3" class="timer__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
           <button id="get_button" class="timer__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
         </form>
         <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных
@@ -189,9 +189,9 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 <section class="advantages" id="section1">   
-    <p class="advantages__title">Наши преимущества</p>
+    <h2 https://email.4px.ru/2023/11/rolf_5_center_10_11/index.htmlclass="advantages__title">Наши преимущества</h2>
     <div class="advantages__items">
         <div class="advantages__item">
             <svg width="77" height="77">
@@ -233,7 +233,7 @@
     <div class="advantages__pagination"></div>
 </section>
 <section class="models" id="section2">   
-    <p class="models__title">Модельный ряд</p>
+    <h2 class="models__title">Модельный ряд</h2>
     <div class="models__items">
         <div class="models__item">
             <div class="models__img">
@@ -397,7 +397,7 @@
     </div>    
 </section>
 <section class="stocks" id="section3">
-    <p class="stocks__title-text">Акции</p>
+    <h2 class="stocks__title-text">Акции</h2>
     <div class="stocks__content">
         <div class="stocks__item">
             <img loading="lazy" width="450" height="330" class="stocks__img" src="./img/content/Model_Range/tiggo_8.webp" alt="car">
@@ -434,19 +434,19 @@
 </section>
 
 <section class="availability">
-    <p class="availability__title-text">Автомобили в наличии</p>
+    <h2 class="availability__title-text">Автомобили в наличии</h2>
     <div class="availability__parameters">
-        <select class="availability__parameters-item availability__parameters-item-text select1" id="options" name="options">
+        <select class="availability__parameters-item availability__parameters-item-text select1" id="options1" name="options">
             <option value="1">Модель 1</option>
             <option value="2">Модель 2</option>
             <option value="3">Модель 3</option>
         </select>
-        <select class="availability__parameters-item availability__parameters-item-text select2" id="options" name="options">
+        <select class="availability__parameters-item availability__parameters-item-text select2" id="options2" name="options">
             <option value="1">Комплектация 1</option>
             <option value="2">Комплектация 2</option>
             <option value="3">Комплектация 3</option>
         </select>
-        <select class="availability__parameters-item availability__parameters-item-text select3" id="options" name="options">
+        <select class="availability__parameters-item availability__parameters-item-text select3" id="options3" name="options">
             <option value="1">Мотор 1</option>
             <option value="2">Мотор 2</option>
             <option value="3">Мотор 3</option>
@@ -540,14 +540,14 @@
     </div>
     <button class="availability__buttons-item">Показать еще</button>
 </section>
-<section class="banner2">
+<div class="banner2">
     <div class="banner2__description">
         <div class="banner2__description-content">
             <p class="banner2__title-text">CHERY В КРЕДИТ ОТ 0,01%</p>       
             <p class="banner2__subtitle-text">Получите выгодное предложение по кредиту</p> 
             <div class="banner2__feedback">
-                <form action="" method="get" class="banner2__fields">
-                    <input class="banner2__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
+                <form action="URL" method="get" class="banner2__fields">
+                    <input id="phoneInput" class="banner2__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
                     <button class="banner2__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
                 </form>
                 <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных данных</p>
@@ -582,15 +582,15 @@
             <p class="banner2__title-text">МЫ ПРЕДЛОЖИМ <br> ЕЩЕ ВЫГОДНЕЕ!</p>  
             <div class="banner2__feedback-down">   
                 <div class="banner2__fields">
-                    <input class="banner2__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
+                    <input id="phoneInput1" class="banner2__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
                     <button class="banner2__button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
                 </div>
                 <p class="timer__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных данных</p>
             </div>  
         </div>
     </div>
-</section>
-<section class="contacts" id="section4">
+</div>
+<div class="contacts" id="section4">
     <div class="contacts__content">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.005603886219!2d48.35505617662975!3d54.356881972599524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d30a10850e821%3A0x3847cd02ed7963cf!2z0L_RgC4g0J3QsNGA0LjQvNCw0L3QvtCy0LAsIDEyOCwg0KPQu9GM0Y_QvdC-0LLRgdC6LCDQo9C70YzRj9C90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNDMyMDAw!5e0!3m2!1sru!2snl!4v1697468394028!5m2!1sru!2snl" class="contacts__map" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="contacts__content-text">
@@ -612,7 +612,7 @@
             <button class="contacts__button">Заказать звонок</button>
         </div>
     </div>
-</section>
+</div>
 <div class="modal" id="phoneModal">
     <div class="modal__content">
         <div class="modal__head">
@@ -627,8 +627,8 @@
             <p class="modal__description-text-bold">Получите предложение!</p>
             <p class="modal__description-text">Оставьте свой номер, и мы перезвоним вам</p>
         </div>
-        <form action="" method="get" class="modal__buttons">
-            <input class="modal__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
+        <form action="URL" method="get" class="modal__buttons">
+            <input id="phoneInput2" class="modal__input" type="text" placeholder="НОМЕР ТЕЛЕФОНА" name="phone" required>
             <button class="modal__buttons-item-red">Заказать звонок</button>
             <p class="modal__mini-text">Нажимая кнопку, Вы соглашаетесь с Политикой в отношении обработки персональных
                 данных</p>
@@ -723,9 +723,10 @@
 <script defer async src="./libs/imask/imask.min.js"></script>
 <script defer async src="./js/main.js"></script>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./libs/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://unpkg.com/imask"></script>
   </body>
 </html>
